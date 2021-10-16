@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uyum Köprüsü</title>
+    <!-- Bootsrap 4.6 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <ul class="nav nav-pills justify-content-center border-bottom">
+        <li class="nav-item">
+            <a href="index.html" class="nav-link"> Ana Sayfa</a>
+        </li>
+        <li class="nav-item">
+            <a href="is_ilanlari.html" class="nav-link"> İş İlanları</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarmenu2" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                Eğitim
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarmenu2">
+                <a class="dropdown-item" href="#">Dil Eğitimi</a>
+                <a class="dropdown-item" href="#">Sertifikalı Eğitimler</a>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Sağlık</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarmenu2" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                Yardım/Destek
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarmenu2">
+                <a class="dropdown-item" href="#">Bize Ulaşın</a>
+                <a class="dropdown-item" href="#">Destek Talebi Oluştur</a>
+
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="navbarmenu2" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Profil
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarmenu2">
+                <a class="dropdown-item" href="index2.html">Bilgileri Düzenle</a>
+                <a class="dropdown-item" href="#">Başvurularım</a>
+
+            </div>
+        </li>
+    </ul>
+
+
+
+    <img src="logo2.svg" alt="Uyum Köprüsü" width="300px" height="300px" class="center">
+    <h3 class="text-center text-black-50">Profil Bilgileri</h3>
+
+    <form class="col-sm-12 center">
+        <div class="form-group">
+            <label for="name">Adı Soyadı</label>
+            <input type="text" class="form-control" id="name" placeholder="Adınızı ve soyadınızı giriniz...">
+        </div>
+        
+        <div class="form-group">
+            <label for="yab_kimlik_no">Yabancı Kimlik No</label>
+            <input type="text" class="form-control" id="yab_kimlik_no" placeholder="Yabancı kimlik numaranızı giriniz...">
+        </div>
+
+        <div class="form-group">
+            <label for="yas">Yaş</label>
+            <input type="text" class="form-control" id="yas" placeholder="Yaşınızı giriniz...">
+        </div>
+
+        <div class="form-group">
+            <label for="cinsiyet">Cinsiyet</label>
+            <select class="form-control" id="cinsiyet">
+                <option>Erkek</option>
+                <option>Kadın</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="egitim">Eğitim Durumu</label>
+            <select class="form-control" id="egitim">
+                <option>Okuma yazması yok</option>
+                <option>İlkokul</option>
+                <option>Ortaokul</option>
+                <option>Lise</option>
+                <option>Üniversite mezunu</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="medenihal">Medeni Hali</label>
+            <select class="form-control" id="medenihal">
+                <option>Evli</option>
+                <option>Bekar</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="meslek">Mesleği</label>
+            <input type="text" class="form-control" id="meslek" placeholder="Mesleğinizi giriniz...">
+        </div>
+
+        <div class="form-group">
+            <label for="ozel_durum">Varsa Özel Durum</label>
+            <select class="form-control" id="ozel_durum">
+                <option>Yok</option>
+                <option>%0-%20 engelli</option>
+                <option>%21-%50 engelli</option>
+                <option>%51 veya daha fazla engelli</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="mail">E-posta adresi (Örn: abc@123.com)</label>
+            <input type="mail" class="form-control" id="mail" placeholder="E-posta adresinizi giriniz...">
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Telefon Numarası</label>
+            <input type="tel" class="form-control" id="phone" placeholder="Telefon numaranızı giriniz...">
+        </div>
+       
+        <div class="form-group">
+            <label for="phone">Şifreniz</label>
+            <input type="password" class="form-control" id="phone" placeholder="Şifrenizi giriniz...">
+        </div>
+        
+        <div class="form-group">
+            <label for="phone">Şifrenizin Tekrarı</label>
+            <input type="password" class="form-control" id="phone" placeholder="Şifrenizi tekrar giriniz...">
+        </div>
+
+        <div class="form-group">
+            <label for="onay">Kullanıcı sözleşmesini onaylıyorum </label>
+            <input type="checkbox" id="onay" checked>
+        </div>
+        <div class="form-group">
+            <button class="btn btn-success">Kaydet</button>
+        </div>
+
+
+    </form>
+
+
+    <!-- Bootstrap 4.6 JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/6169fb5bf7c0440a591e72d0/1fi2vrnih';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+
+</body>
+
+</html>
